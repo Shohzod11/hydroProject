@@ -1,0 +1,136 @@
+.contrubutor_sec{
+    margin: 60px 0;
+    width: 100%;
+    h2{
+        max-width: 210px;
+        font-weight: 700;
+        margin: 0 auto;
+        transition-property: transform;
+        transition: 0.25s ease;
+        // text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    h2::after {
+        content: '';
+        border-top: 4px solid #4178c0;
+        width: 80%;
+        position: absolute;
+        display: block;
+        transform: rotateY(90deg);
+        transition: transform 0.25s linear;
+      }
+      h2:hover {
+        transform: scale(1);
+      }
+      h2:hover::after {
+        transform: rotate(0deg);
+      }
+    p{
+        font-size: 17px;
+        text-align: center;
+        color: grey;
+    }
+}
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 40s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+// Styling
+.slider {
+	background: white;
+    margin: 0 8rem;
+	overflow:hidden;
+	&::before,
+	&::after {
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide_track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	
+	.slide {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            margin: 1.5rem 0;
+            width: 120px;
+            cursor: pointer;
+            object-fit: scale-down; 
+            &:hover{
+                transform: translateX(15px);
+                transition: 0.8s;
+            }
+        }
+	}
+}
+@media(min-width:0) and (max-width:1200.9px){
+    .contrubutor_sec{
+        h2{
+            max-width: 100px;
+            margin: 15px auto;
+            &::after{
+                width: 130%;
+            }
+        }
+        .slide_track {
+           width: 100%;
+        }
+        .slider {
+            margin: 0 2px;
+            width: 100%;
+            img{
+                margin: 0 0.5rem;
+            }
+        }
+        .block{
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+            margin: 0 ;
+            width: 100%;
+            padding: 1.5rem 0;
+            display: flex;
+            justify-content: space-around;
+          flex-wrap: wrap;
+            img{
+                width: 100px;
+                border: 2px solid blue;
+                margin:1rem;
+                cursor: pointer;
+                object-fit: scale-down;
+            }
+        
+        }
+        .block:hover{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    
+        }
+    }
+}

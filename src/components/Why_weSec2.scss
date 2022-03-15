@@ -1,0 +1,127 @@
+.why_weSec2{
+    margin: 10px 100px;
+    .row{
+        display: grid;
+        max-width: 1600px;
+        margin: 0 auto;
+        justify-content: space-between;
+        grid-template-columns: 52% 45%;
+
+        .left_box{
+            overflow: hidden !important;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            img{
+                &:hover{
+                    transform: scale(1.2 ,1.2);
+                }
+                border-radius: 15px;
+                width: 100%;
+                transition: 0.3s ease-in-out;
+                height: 90%;
+            }
+        }
+        .right_box{
+            &:hover{
+                h1::after{
+                    transform: rotate(0deg);
+                }
+            }
+            padding: 110px 0;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            display: flex;
+            h1 {
+                font-weight: 700;
+                text-align: center;
+                display:inline-block;
+                transition-property: transform;
+                transition: 0.25s ease;
+                position: relative;
+              }
+              h1::after {
+                content: '';
+                border-top: 4px solid #4178c0;
+                width: 100%;
+                position: absolute;
+                top: 50px;
+                display: block;
+                transform: rotateY(90deg);
+                transition: transform 0.25s linear;
+              }
+              h1:hover {
+                transform: scale(1);
+              }
+             
+            p{
+                color:  #767676;
+                font-size: 20px;
+                margin-top: 0;
+                width: 100%;
+                text-align: center;
+            }
+            
+        }
+    }
+}
+@media(min-width:0) and (max-width:750.9px){
+    .why_weSec2{
+        margin: 0px 0.5rem;
+        .row{
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+            justify-content: space-between;
+            .left_box{
+                overflow: hidden !important;
+                border-radius: 15px;
+                display: flex;
+                align-items: center;
+            }
+            .right_box{
+                padding: 10px 0;
+                h1{
+                    font-weight: 700;
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 13px;
+                }
+                
+            }
+        }
+    }
+}
+@media(min-width:751px) and (max-width:1200.9px){
+    .why_weSec2{
+        margin: 0px 0.5rem;
+        .row{
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+            justify-content: space-between;
+            .left_box{
+                overflow: hidden !important;
+width: 45%;
+                border-radius: 15px;
+                display: flex;
+                align-items: center;
+            }
+            .right_box{
+                padding: 10px 0;
+width: 45%;
+
+                h1{
+                    font-weight: 700;
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 13px;
+                }
+                
+            }
+        }
+    }
+}

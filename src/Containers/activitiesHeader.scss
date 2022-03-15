@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Roboto:wght@500&display=swap');
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: {
+        image: url("../assets/activitiesHeaderFoto.jpg");   
+    }
+
+    .banner-text{
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.35);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        div{  
+            font-family: 'Roboto', sans-serif;     
+            font-size: 48px;
+            font-weight: 600;
+        }
+
+        span{
+            font-size: 20px;
+            font-weight: 700;
+
+            a{
+                color: white;
+            }
+
+            span{
+                color: #FFC700;
+            }
+        }
+      
+    }
+}
+
+.Barchasi{
+    background: {
+        image: url("../assets/activitiesHeaderFoto.jpg") !important;   
+    }
+}
+.Kelgusida{
+    background: {
+        image: url("../assets/activitiesHeaderFoto1.jpg") !important;   
+    }
+}
+.Hozirda{
+    background: {
+        image: url("../assets/activitiesHeaderFoto3.jpg") !important;   
+    }
+}
+.Yakunlar{
+    background: {
+        image: url("../assets/activitiesHeaderFoto2.jpg") !important;   
+    }
+}

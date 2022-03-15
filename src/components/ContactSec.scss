@@ -1,0 +1,220 @@
+.contact_sec{
+    margin-top: 20px;
+    .wrapper{
+        display: grid;
+        grid-template-columns: 85%;
+        justify-content: center;
+        .for_map{
+           background-color: rgb(24, 24, 97);
+            margin: 1rem 0;
+            text-align: center;
+            border-radius: 20px;
+            height: 527px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact_form{
+            padding: 30px 0 0 30px;
+            h2{
+                font-weight: 600;
+               
+            }
+            form{
+                .head{
+                    display: flex; 
+                    .left{
+                        margin-right: 20px;
+                        input{
+                            width: 300px;
+                            height: 40px;
+                            background: #CCDFEE;
+                            border-radius: 5px;
+                            border: 1px solid #85A3BA;
+                            padding: 5px;
+                            &:focus{
+                                outline: 0;
+                                border: 1px solid #fff;
+                            }    
+                        }
+                    }
+                    .right{
+                        input{
+                            width: 300px;
+                            height: 40px;
+                            background: #CCDFEE;
+                            border-radius: 5px;
+                            border: 1px solid #85A3BA;
+                            padding: 5px;
+                            &:focus{
+                                outline: 0;
+                                border: 1px solid #fff;
+                            }    
+                        }
+                    }
+                }
+                .comment{
+                    margin: 30px 0;
+                    textarea{
+                        width: 620px;
+                        height: 143px;
+                        background: #CCDFEE;
+                        border: 1px solid #85A3BA;
+                        box-sizing: border-box;
+                        border-radius: 4px;
+                        padding: 10px;
+                        &:focus{
+                            outline: 0;
+                            border: 1px solid #85A3BA !important;
+                        }
+                    }
+                }
+                .submit{
+                    button{
+                        padding: 10px 32px;
+                        background: #011C80;
+                        border-radius: 3px;
+                        margin: 0.5rem 0;
+                        color: #fff;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width:0) and (max-width:900.9px){
+    .contact_sec{
+        .wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            .for_map{ 
+                width: 100%;
+                height: auto;
+                padding: 0;
+                margin: 0;
+                border-radius: 0;
+            }
+            .contact_form{
+                padding: 30px 0 0 0;
+                width: 100%;
+                h2{
+                    font-weight: 600;
+                   width: 100%;
+                   font-size: 22px;
+                }
+                form{
+
+                    .head{
+                        display: flex; 
+flex-wrap: wrap;
+justify-content: center;
+                        .left{
+                            margin-right: 0;
+                            text-align: center;
+width: 100%;
+                            input{
+                                width: 90%;
+                                height: 40px;
+                            }
+                        }
+                        .right{
+                            text-align: center;
+                            margin-top: 1rem;
+                            width: 100%;
+                            input{
+                                width: 90%;
+                            }
+                        }
+                    }
+                    .comment{
+                        margin: 30px 0;
+                        width: 100%;
+                        text-align: center;
+                        textarea{
+                            width: 90%;
+                            height: 143px;
+                        }
+                    }
+                    .submit{
+                        button{
+                            padding: 10px 32px;
+                            background: #011C80;
+                            border-radius: 3px;
+                            margin: 0.5rem 0;
+                            color: #fff;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width:901px) and (max-width:1200.9px){
+    .contact_sec{
+        .wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .for_map{ 
+                width:100%;
+                height: 530px;
+            }
+            .contact_form{
+                padding: 30px 0 0 0;
+                width:49%;
+
+                h2{
+                    font-weight: 600;
+                   width: 100%;
+                   font-size: 22px;
+                }
+                form{
+
+                    .head{
+                        display: flex; 
+flex-wrap: wrap;
+justify-content: center;
+                        .left{
+                            margin-right: 0;
+                            text-align: center;
+width: 100%;
+                            input{
+                                width: 90%;
+                                height: 40px;
+                            }
+                        }
+                        .right{
+                            text-align: center;
+                            margin-top: 1rem;
+                            width: 100%;
+                            input{
+                                width: 90%;
+                            }
+                        }
+                    }
+                    .comment{
+                        margin: 30px 0;
+                        width: 100%;
+                        text-align: center;
+                        textarea{
+                            width: 90%;
+                            height: 143px;
+                        }
+                    }
+                    .submit{
+                        button{
+                            padding: 10px 32px;
+                            background: #011C80;
+                            border-radius: 3px;
+                            margin: 0.5rem 0;
+                            color: #fff;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

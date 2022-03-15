@@ -1,0 +1,22 @@
+.chartet {
+    width: 100%;
+    padding: 25px 4.5%;
+}
+
+.recharts-responsive-container {
+    width: 100% !important;
+    height: 300px !important;
+}
+
+.chart {
+    padding: 25px 30px;
+    border: 2px solid rgb(214, 214, 214);
+    border-radius: 8px;
+    box-shadow: 0 0 3px 3px rgb(214, 214, 214);
+}
+
+.chart_text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}

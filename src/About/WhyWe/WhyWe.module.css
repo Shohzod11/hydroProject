@@ -1,0 +1,255 @@
+/* ./WhyWe */
+.body {
+    display: flex;
+    justify-content: space-between;
+    margin: 6rem 18px;
+}
+
+.imgBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 710px;
+}
+
+.pictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 680px;
+}
+
+.man,
+.woman {
+    max-width: 330px !important;
+    height: auto;
+}
+
+.girl {
+    width: 290px;
+    height: auto;
+}
+
+.man:hover,
+.woman:hover,
+.girl:hover {
+    transform: scale(1.05) !important;
+}
+
+
+.textBox {
+    width: 48%;
+    text-align: center;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 45px;
+    color: #000000;
+    margin: 0 auto 0px;
+    width: 250px;
+}
+
+
+.title::after {
+    margin: 0 0 0 auto;
+    content: '';
+    border-radius: 4px;
+    border-top: 4px solid #003072fc;
+    width: 230px;
+    position: absolute;
+    display: block;
+    transform: rotateY(90deg);
+    transition: transform 0.25s linear;
+    margin: 10px 0;
+}
+
+.title:hover {
+    transform: scale(1);
+}
+
+.body:hover .title::after {
+    transform: rotate(0deg);
+}
+
+.textBox p {
+    font-weight: normal;
+    font-size: 18px;
+    color: #000000;
+    margin-top: 2rem;
+}
+
+.textBox p,
+.title {
+    font-family: var(--main-font-family);
+    font-style: normal;
+    line-height: 151.19%;
+    letter-spacing: 0.015em;
+}
+
+/* ./NumberSec */
+.NumberSec {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 2rem;
+}
+
+@media (min-width:0) and (max-width:549.9px) {
+
+    .body,
+    .imgBox {
+        flex-direction: column;
+    }
+
+    .body {
+        align-items: center;
+        margin: 1rem 10px;
+    }
+
+    .girl,
+    .man,
+    .woman,
+    .imgBox,
+    .textBox {
+        width: 100%;
+    }
+
+
+    .man:hover,
+    .woman:hover,
+    .girl:hover {
+        transform: scale(1) !important;
+    }
+
+    .pictures {
+        align-items: stretch;
+    }
+
+    .picture {
+        margin-bottom: 1rem;
+    }
+
+    .textBox p {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    .textBox p,
+    .title {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 28px;
+        width: 250px;
+        margin: 25px auto;
+    }
+
+    /* ./NumberSec */
+    /* .NumberSec {
+        width: 100%;
+    } */
+
+}
+
+@media (min-width:550px) and (max-width:749.9px) {
+    .body {
+        flex-direction: column;
+    }
+
+    .imgBox {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .textBox {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+        margin: 1rem 0;
+        font-size: 32px;
+    }
+
+    .pictures {
+        flex-direction: row;
+        height: auto;
+        overflow: hidden;
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .picture {
+        width: 80%;
+        margin: 0.5rem .5rem;
+    }
+
+    .woman {
+        max-width: 100% !important;
+    }
+
+    .girl {
+        width: 100% !important;
+    }
+
+    /* ./NumberSec */
+    .NumberSec {
+        width: 100%;
+
+    }
+}
+
+@media (min-width:750px) and (max-width:1249.9px) {
+    .pictures {
+        flex-direction: row;
+    }
+
+    .imgBox {
+        width: 100%;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .body {
+        flex-direction: column;
+        margin: 3rem 1%;
+    }
+
+    .pictures {
+        height: auto;
+        align-items: stretch;
+    }
+
+    .girl {
+        height: 100% !important;
+        object-fit: cover;
+    }
+
+    .textBox {
+        width: 100%;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 35px;
+        margin-top: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    .textBox p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .NumberSec {
+        width: 100%;
+        margin: 0;
+        justify-content: space-around;
+    }
+}

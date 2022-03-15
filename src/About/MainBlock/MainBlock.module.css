@@ -1,0 +1,149 @@
+.body {
+    display        : flex;
+    justify-content: space-evenly;
+    flex-wrap      : wrap;
+    margin         : 8rem 0;
+}
+
+.text,
+.title {
+    font-family   : var(--main-font-family);
+    line-height   : 151.19%;
+    letter-spacing: 0.015em;
+    color         : #000000;
+    font-style    : normal;
+
+}
+
+.title {
+    width      : 40%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.title img {
+    width     : 95%;
+    height    : auto;
+    margin: auto 0;
+    transition: 0.5s all linear;
+}
+
+.title img:hover {
+    transform: scale(1.1);
+}
+
+.titleTextBody{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.titleText {
+    width      : 400px;
+    text-align : center;
+    font-family: var(--main-font-family);
+    color      : #000;
+    font-weight: bold;
+    margin     : 0 auto 10px;
+}
+
+.titleText::after {
+    content   : '';
+    border-radius: 4px;
+    border-top: 4px solid #003072fc; 
+    width     : 100%;
+    position  : absolute;
+    display   : block;
+    transform : rotateY(90deg);
+    transition: transform 0.25s linear;
+    margin    : 10px 0;
+}
+
+.titleText:hover {
+    transform: scale(1);
+}
+
+.body:hover .titleText::after {
+    transform: rotate(0deg);
+}
+
+.text {
+    width        : 50%;
+    font-family  : var(--main-font-family);
+    font-weight  : normal;
+    font-size    : 20px;
+    padding-right: 6rem;
+}
+
+@media (min-width:0) and (max-width:849.9px) {
+    .body {
+        flex-direction: column;
+        margin        : 1rem 0;
+    }
+
+    .title {
+        width    : 100%;
+        font-size: 30px;
+    }
+
+    .title h1 {
+        width     : 100%;
+        text-align: center;
+        margin    : 0;
+    }
+
+    .title img {
+        width : 100%;
+        margin: 0rem 0 10px 0;
+    }
+
+
+    .title img:hover {
+        transform: scale(1);
+    }
+
+    .text {
+        margin       : 1rem auto;
+        width        : 80%;
+        font-size    : 14px;
+        text-align   : center;
+        padding: 0;
+    }
+
+    .titleText{
+        width: 200px;
+    }
+    .titleTextBody{
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width:850px) and (max-width:1000.9px) {
+    .body {
+        flex-direction: column;
+        align-items   : center;
+    }
+
+    .text {
+        width        : 100%;
+        padding-right: 0;
+        text-align   : center;
+        margin-top   : 1rem;
+    }
+
+    .titleText{
+        width: 300px;
+    }
+}
+
+@media (min-width:850px) and (max-width:1249.9px) {
+
+    .body {
+        margin: 3rem 1%;
+    }
+
+    .text {
+        width    : 95%;
+        font-size: 18px;
+    }
+}

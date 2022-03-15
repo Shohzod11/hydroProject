@@ -1,0 +1,89 @@
+.texnik-table{
+    width: 1200px;
+    margin: 30px auto;
+    h2{
+        font-weight: 700;
+    }
+    @media (max-width: 1300px) {
+        width: 1000px;
+    }
+    @media (max-width: 1050px) {
+        width: 800px;
+    }
+    @media (max-width: 900px) {
+        width: 700px;
+    }
+    @media (max-width: 750px) {
+        width: 600px;
+    }
+    @media (max-width: 650px) {
+        width: 550px;
+    }
+    @media (max-width: 600px) {
+        width: 500px;
+        margin: 10px auto;
+    }
+    @media (max-width: 520px) {
+        width: 470px;
+    }
+    @media (max-width: 480px) {
+        width: 420px;
+    }
+
+
+    .texnik-table-ramka{
+        border: 2px solid #E7E7EC;
+        padding: 40px;
+
+        @media (max-width: 750px) {
+            padding: 20px;
+        }
+        @media (max-width: 550px) {
+            padding: 10px;
+        }
+
+        .texnik-table-menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            border-bottom: 3px solid #E7E7EC;
+            margin-bottom: 30px;
+
+            span{
+                margin-right: 20px;
+                position: relative;
+                color: #09076180;
+                padding: 10px;
+                cursor: pointer;
+
+                @media (max-width: 480px) {
+                    margin-right: 5px;
+                }
+                
+                &::after{
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    border-bottom: 3px solid transparent;
+                    position: absolute;
+                    top: 42px;
+                    left: 0;
+                }
+                &:hover{
+                    background-color: #fcf6ed;
+                }
+                
+            }
+        }
+    }
+}
+
+.texnik-menu-aktiv{
+    color: #090761 !important;
+    background-color: #E6EFF6;
+
+    &::after{
+        border-bottom: 3px solid #2F2D51 !important;
+    }
+}

@@ -1,0 +1,71 @@
+.yutuqlar {
+    width: 50%;
+}
+
+.yutuqlar1 {
+    padding: 50px 4.5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    overflow: hidden;
+}
+
+.yutuqlar1 h1 {
+    font-family: 'Roboto';
+    font-size: 30px;
+    margin: 0;
+}
+
+.yutuq_rasm img {
+    z-index: 10;
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.yutuq_rasm img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    z-index: 9999 !important;
+}
+
+.yutuq_rasm {
+    width: 50%;
+}
+
+.yutuq_rasm, .yutuqlar {
+    padding: 0 2% 0 0;
+}
+
+.yutuqlar p {
+    margin-top: 15px;
+}
+
+.yutuqlar p:hover {
+    /* transform: translateX(7px); */
+    transition: 0.3s;
+    color:#2D9CDB;
+}
+
+@media screen and (max-width: 768px) {
+    .yutuqlar1 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .yutuqlar {
+        width: 100%;
+    }
+
+    .yutuq_rasm {
+        width: 100%;
+    }
+
+    .yutuqlar p {
+        width: 100%;
+    }
+}

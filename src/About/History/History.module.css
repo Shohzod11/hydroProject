@@ -1,0 +1,90 @@
+.title {
+    margin-bottom: 3rem;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    margin: 0 auto 3rem;
+    width: 340px;
+    line-height: 123.19%;
+    text-align: center;
+    color: #000000;
+}
+
+
+.title::after {
+    margin    : 0 auto;
+    content   : '';
+    border-radius: 4px;
+    border-top: 4px solid #003072fc; 
+    width     : 100%;
+    display   : block;
+    transform : rotateY(90deg);
+    transition: all 0.25s linear;
+}
+
+
+.blockBody:hover .title::after {
+    transform: scale(1);
+}
+
+.body {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-evenly;
+}
+
+.body .picture {
+    margin-bottom: 10px;
+    width        : 24%;
+    height       : 100%;
+    transition   : .5s all linear;
+}
+
+.body .picture:hover {
+    transform: scale(1.07);
+}
+
+.blockBody {
+    margin-top   : 3rem;
+    margin-bottom: 1.5rem
+}
+
+@media (min-width:0) and (max-width:449.9px) {
+    .body .picture{
+        width: 90%;
+    }
+
+    .title {
+        margin-bottom: 2rem;
+        font-size    : 28px;
+        line-height  : 123.19%;
+        width: 200px;
+    }
+
+    .title::after{
+        width: 100%;
+    }
+
+    .pictureBody {
+        width        : 31%;
+        margin-bottom: 7px;
+    }
+
+    .blockBody {
+        margin: 0;
+    }
+}
+
+@media (min-width:450px) and (max-width:749.9px) {
+    .pictureBody {
+        width: 45%;
+    }
+}
+
+@media (min-width:750px) and (max-width:1249.9px) {
+    .title {
+        font-size: 35px;
+        width: 300px;
+    }
+}

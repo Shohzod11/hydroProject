@@ -1,0 +1,381 @@
+a.active {
+    border-bottom: 2px solid #0969EB;
+    padding: 0 5px;
+}
+.small_ul1:hover .pagesLink{
+    background-color: #0969EB;
+}
+.pagesLink:hover,
+.contact_me:hover
+{
+    font-weight: 600 !important;
+    text-decoration : none;
+}
+
+.main_header {
+    @media all and (max-width:992px){
+        display: none;
+    }
+    width: 100%;
+    color: white;
+    position: absolute;
+    margin-top: 4rem;
+    z-index: 1;
+    .bContainer {
+        padding: 10px 40px;
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            @media all and (max-width:992px){
+                .logo{
+                    margin-top: -100px;
+                }
+            }
+            .logo {
+                img {
+                    width: 95px;
+                }
+            }
+            .main_parts {
+                margin: 25px 0;
+                width: 80%;
+                .parent_ul {
+                    padding-left : 0;
+                    display      : flex;
+                    margin-bottom: 0;
+                    justify-content: space-between;
+                    width: 100%;
+                  
+                    .pagesLink{
+                        &:hover{
+                            background-color: #0969EB;
+                        }
+                        
+                        color: #fff;
+                        font-size: 1.4em;
+                        text-decoration: none;
+                        opacity: 1;
+                        text-align: center;
+                        line-height: 1em;
+                        padding: 5px;
+                        font-weight: 600;
+                    }
+                   
+                    li {
+                        list-style : none;
+                        font-weight: 600;
+                        position   : relative;
+                        ul {
+                            z-index: 10;
+                            border : none !important;
+                            li {
+                                margin-left : 0 !important;
+                                padding-left: 10px !important;
+                                a{
+                                    color: #0969EB;
+                                }
+                                &:hover {
+                                    background-color: #0969EB;
+                                }
+                            }
+                        }
+                    }
+
+                    .wrap_li1 {
+                        cursor: pointer !important;
+                        &:hover {
+                            .small_ul1 {
+                                opacity   : 1;
+                                visibility: visible;
+                            }
+                        }
+                        .small_ul1 {
+                            position          : absolute;
+                            padding-left      : 0;
+                            opacity           : 0;
+                            transition        : 0.1s ease-in;
+                            visibility        : hidden;
+                            top               : 35px;
+                            background-color  : #ffffff;
+                            width             : 200%;
+                            border            : 1px solid rgba(0, 0, 0, 0.281);
+
+                            li {
+                                transition: 0.1s ease-in-out;
+                                cursor    : pointer !important;
+                                &:hover {
+                                    a{
+                                        padding-left: 2px;
+                                        color: #fff;
+                                    }
+                                }
+                                margin     : 0;
+                                margin-left: 10px;
+                                padding    : 7px 0;
+                                a {
+                                    color          : #0969EB;
+                                    font-weight    : 500;
+                                    text-decoration: none;
+                                    font-size: 17px;
+                                }
+                            }
+                        }
+                    }
+
+                    .wrap_li2 {
+                        cursor: pointer !important;
+                        &:hover {
+                            .small_ul2 {
+                                opacity   : 1;
+                                visibility: visible;
+                            }
+                        }
+                        .small_ul2 {
+                            position          : absolute;
+                            padding-left      : 0;
+                            opacity           : 0;
+                            transition        : 0.1s ease-in;
+                            visibility        : hidden;
+                            top               : 35px;
+                            background-color  : #ffffff;
+                            width             : 120%;
+                            border            : 1px solid rgba(0, 0, 0, 0.281);
+
+                            li {
+                                transition: 0.1s ease-in-out;
+                                cursor    : pointer !important;
+                                &:hover {
+                                    a{
+                                        padding-left: 2px;
+                                        color: #fff;
+                                    }
+                                }
+                                margin     : 0;
+                                margin-left: 10px;
+                                padding    : 7px 0;
+                                a {
+                                    color          : #0969EB;
+                                    font-weight    : 500;
+                                    text-decoration: none;
+                                    font-size: 17px;
+                                }
+                            }
+                        }
+                    }
+
+                    .wrap_li3 {
+                        cursor: pointer !important;
+                        &:hover {
+                            .small_ul3 {
+                                opacity   : 1;
+                                visibility: visible;
+                            }
+                        }
+                        .small_ul3 {
+                            position          : absolute;
+                            padding-left      : 0;
+                            opacity           : 0;
+                            transition        : 0.1s ease-in;
+                            visibility        : hidden;
+                            top               : 35px;
+                            background-color  : #ffffff;
+                            width             : 200%;
+                            border            : 1px solid rgba(0, 0, 0, 0.281);
+
+                            li {
+                                transition: 0.1s ease-in-out;
+                                cursor    : pointer !important;
+                                &:hover {
+                                    a{
+                                        padding-left: 2px;
+                                        color: #fff;
+                                    }
+                                }
+                                margin     : 0;
+                                margin-left: 10px;
+                                padding    : 7px 0;
+                                a {
+                                    color          : #0969EB;
+                                    font-weight    : 500;
+                                    text-decoration: none;
+                                    font-size: 17px;
+                                }
+                            }
+                        }
+                    }
+
+                    .wrap_li4 {
+                        cursor: pointer !important;
+                        &:hover {
+                            .small_ul4 {
+                                opacity   : 1;
+                                visibility: visible;
+                            }
+                        }
+                        .small_ul4 {
+                            position          : absolute;
+                            padding-left      : 0;
+                            opacity           : 0;
+                            transition        : 0.1s ease-in;
+                            visibility        : hidden;
+                            top               : 35px;
+                            background-color  : #ffffff;
+                            width             : 120%;
+                            border            : 1px solid rgba(0, 0, 0, 0.281);
+
+                            li {
+                                transition: 0.1s ease-in-out;
+                                cursor    : pointer !important;
+                                &:hover {
+                                    a{
+                                        padding-left: 2px;
+                                        color: #fff;
+                                    }
+                                }
+                                margin     : 0;
+                                margin-left: 10px;
+                                padding    : 7px 0;
+                                a {
+                                    color          : #0969EB;
+                                    font-weight    : 500;
+                                    text-decoration: none;
+                                    font-size: 17px;
+                                }
+                            }
+                        }
+                    }
+
+                    .wrap_li5 {
+                        cursor: pointer !important;
+                        &:hover {
+                            .small_ul5 {
+                                opacity   : 1;
+                                visibility: visible;
+                            }
+                        }
+                        .small_ul5 {
+                            position          : absolute;
+                            padding-left      : 0;
+                            opacity           : 0;
+                            transition        : 0.1s ease-in;
+                            visibility        : hidden;
+                            top               : 35px;
+                            background-color  : #ffffff;
+                            width             : 120%;
+                            border            : 1px solid rgba(0, 0, 0, 0.281);
+
+                            li {
+                                transition: 0.1s ease-in-out;
+                                cursor    : pointer !important;
+                                &:hover {
+                                    a{
+                                        padding-left: 2px;
+                                        color: #fff;
+                                    }
+                                }
+                                margin     : 0;
+                                margin-left: 10px;
+                                padding    : 7px 0;
+                                a {
+                                    color          : #0969EB;
+                                    font-weight    : 500;
+                                    text-decoration: none;
+                                    font-size: 17px;
+                                }
+                            }
+                        }
+                    }
+
+                    .wrap_li6 {
+                        cursor: pointer !important;
+                        &:hover {
+                            .small_ul6 {
+                                opacity   : 1;
+                                visibility: visible;
+                            }
+                        }
+                        .small_ul6 {
+                            position          : absolute;
+                            padding-left      : 0;
+                            opacity           : 0;
+                            transition        : 0.1s ease-in;
+                            visibility        : hidden;
+                            top               : 35px;
+                            background-color  : #ffffff;
+                            width             : 200%;
+                            border            : 1px solid rgba(0, 0, 0, 0.281);
+
+                            li {
+                                transition: 0.1s ease-in-out;
+                                cursor    : pointer !important;
+                                &:hover {
+                                    a{
+                                        padding-left: 2px;
+                                        color: #fff;
+                                    }
+                                }
+                                margin     : 0;
+                                margin-left: 10px;
+                                padding    : 7px 0;
+                                a {
+                                    color          : #0969EB;
+                                    font-weight    : 500;
+                                    text-decoration: none;
+                                    font-size: 17px;
+                                    svg{
+                                        transition: 0.2s ease;
+
+                                    }
+                                }
+                            }
+                            .manage_sys{
+                                &:hover{
+                                   
+                                    svg{
+                                        transform: rotate(90deg);
+                                        color: #fff;
+                                    }
+                                    .additional_ul{
+                                        opacity: 1;
+                                        visibility: visible;
+                                    }
+                                }
+                                svg{
+                                    color: #0969EB;
+                                    transition: 0.3s ease;
+                                }
+                            }
+                            .additional_ul{
+                                opacity: 0;
+                                visibility: hidden;
+                                padding-left: 0;
+                                position: absolute;
+                                left: -110px;
+                                top: 0;
+                                background-color: #fff;
+                                li{
+                                    &:hover{
+                                        background-color: #0969EB;
+                                        a{
+                                            color: #fff;
+                                        }
+                                    }
+                                    padding-right: 15px;
+                                    a{
+                                        color: #0969EB;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .contact_me {
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,177 @@
+.count {
+    width: 100px;
+}
+
+.number {
+    font-weight: 900;
+    font-size: 45px;
+    color: #000000;
+}
+
+.name,
+.number {
+    font-family: var(--main-font-family);
+    font-style: normal;
+    line-height: 151.19%;
+    letter-spacing: 0.015em;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 22px;
+    color: #6C6C6C;
+}
+
+/* TeamMembersBox */
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px 50px;
+    height: auto !important;
+    /*   background    : #FFFFFF;
+    box-shadow    : 0px 4px 13px rgba(0, 0, 0, 0.13);
+    margin-top    : 2.5rem; */
+    transition: 0.2s all cubic-bezier(0.58, 0.18, 0.82, 0.41);
+    width: 18% !important;
+}
+
+.box:hover img {
+    border-radius: 50%;
+}
+
+.picture {
+    height: auto;
+    width: 90%;
+    overflow: hidden;
+    transition: .3s all linear;
+    border-radius: 20px;
+}
+
+.name_surname {
+    width: 100%;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 151.19%;
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: #000000;
+    user-select: none;
+    display: inline-block;
+    position: relative;
+    margin: 10px 0 0 0;
+}
+
+.box:hover .name_surname::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    left: 0;
+    background-color: #fdd2a5;
+    bottom: 11px;
+    z-index: -1;
+    transition: .5s all ease;
+    bottom: 7px;
+}
+
+.role {
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70%;
+    line-height: 151.19%;
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: #9CAECB;
+}
+
+.body_about {
+    background-image: url('Main.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width:0) and (max-width:449.9px) {
+
+    .number {
+        font-weight: 900;
+        font-size: 26px;
+        color: #000000;
+    }
+
+    .name,
+    .number {
+        line-height: 151.19%;
+        letter-spacing: 0.015em;
+        margin: 0;
+        text-align: center;
+    }
+
+
+    .name {
+        font-weight: 500;
+        font-size: 14px;
+        color: #6C6C6C;
+    }
+
+    /* TeamMembersBox */
+    .box {
+        padding: 20px 10px 0;
+        width: 100% !important;
+        margin-top: 1rem;
+    }
+
+    .name_surname{
+        width: 250px;
+    }
+}
+
+@media (min-width:450px) and (max-width:749.9px) {
+
+    /* TeamMembersBox */
+    .box {
+        width: 45% !important;
+        margin: 0.5rem 0.6rem;
+    }
+
+    .number {
+        font-size: 26px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width:750px) and (max-width:1249.9px) {
+
+    /* TeamMembersBox */
+    .box {
+        width: 30% !important;
+        margin: 0.7rem 0.7rem;
+    }
+
+    .number {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .name {
+        font-size: 20px;
+        text-align: center;
+
+    }
+}

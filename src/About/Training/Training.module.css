@@ -1,0 +1,105 @@
+.body {
+    margin: 3rem 40px;
+}
+
+.body h1,
+.body p {
+    font-family: var(--main-font-family);
+    font-style: normal;
+    line-height: 151.19%;
+    letter-spacing: 0.015em;
+    color: #000000;
+}
+
+.body h1 {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+.body h1::after {
+    content: '';
+    border-radius: 4px;
+    border-top: 4px solid #003072fc;
+    width: 200px;
+    position: absolute;
+    display: block;
+    transform: rotateY(90deg);
+    transition: transform 0.25s linear;
+    margin: 0;
+}
+
+.body h1:hover {
+    transform: scale(1);
+}
+
+.body:hover h1::after {
+    transform: rotate(0deg);
+}
+
+
+.body p {
+    text-align: justify;
+    width: 95%;
+    margin: 1rem auto 0;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.pictures {
+    margin-top: 58px;
+}
+
+.pictures,
+.pictures img {
+    width: 100%;
+}
+
+@media (min-width:0) and (max-width:449.9px) {
+    .body {
+        margin: 2rem 20px;
+    }
+
+    .body h1 {
+        font-size: 28px;
+        width: 150px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .body h1::after {
+        width: 100%;
+    }
+
+    .body p {
+        text-align: center;
+        width: 90%;
+        margin: 5px auto 0;
+        font-size: 14px;
+    }
+
+    .pictures {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width:750px) and (max-width:1249.9px) {
+    .body {
+        margin: 2rem 1%;
+    }
+
+    .body h1 {
+        font-size: 35px;
+    }
+
+    .body p {
+        text-align: center;
+    }
+
+    .pictures {
+        margin-top: 2rem;
+    }
+}

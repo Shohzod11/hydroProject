@@ -1,0 +1,139 @@
+.body {
+    margin: 4rem 0;
+}
+
+.block_body {
+    margin: 3rem 40px 8rem;
+
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+    margin-bottom  : 2rem;
+}
+
+.title {
+    max-width: 500px;
+
+    font-family   : var(--main-font-family);
+    font-style    : normal;
+    font-weight   : bold;
+    font-size     : 40px;
+    line-height   : 151.19%;
+    text-align    : center;
+    letter-spacing: 0.015em;
+    color         : #000000;
+    margin        : 0 auto;
+}
+
+
+.title::after {
+    margin    : 0 0 0 auto;
+    content   : '';
+    border-radius: 4px;
+    border-top: 4px solid #003072fc; 
+    width     : 100%;
+    position  : absolute;
+    display   : block;
+    transform : rotateY(90deg);
+    transition: transform 0.25s linear;
+    margin    : 10px 0;
+}
+
+.title:hover {
+    transform: scale(1);
+}
+
+.body:hover .title::after {
+    transform: rotate(0deg);
+}
+
+.block_titleBody{
+    width: 100%;
+    border: 3px solid firebrick;
+}
+
+.block_title {
+    width         : 100%;
+    font-family   : var(--main-font-family);
+    font-style    : normal;
+    font-weight   : bold;
+    font-size     : 32px;
+    line-height   : 151.19%;
+    letter-spacing: 0.015em;
+    color         : #000000;
+    margin-left   : 0;
+}
+
+
+.block_title::after {
+    margin    : 0 0 0 auto;
+    content   : '';
+    border-radius: 4px;
+    border-top: 4px solid #003072fc; 
+    width     : 230px;
+    position  : absolute;
+    display   : block;
+    transform : rotateY(90deg);
+    transition: transform 0.25s linear;
+    margin    : 10px 0;
+}
+
+.block_title:hover {
+    transform: scale(1);
+}
+
+.block_body:hover .block_title::after {
+    transform: rotate(0deg);
+}
+
+@media (min-width:0) and (max-width:749.9px) {
+    .body {
+        margin: 2rem 0;
+    }
+
+    .title {
+        font-size: 24px;
+        width: 250px;
+    }
+
+    .title::after{
+        display: none;
+    }
+
+    .block_title {
+        font-size: 20px;
+        text-align: center;
+        margin: 1rem auto 0;
+        width: 230px;
+    }
+
+    .block_body {
+        text-align     : center;
+        margin         : 0rem 20px 0;
+        flex-wrap      : wrap;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width:750px) and (max-width:1249.9px) {
+    .block_body {
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .title::after{
+        display: none;
+    }
+
+    .block_title {
+        font-size: 28px;
+    }
+
+    .body {
+        margin: 2rem 1%;
+    }
+}

@@ -1,0 +1,21 @@
+.cards_img {
+    padding: 15px 4.5%;
+    display: flex;
+    width: 100%;
+}
+
+.cards_text {
+    width: 33%;
+    padding: 15px;
+    margin: 15px;
+}
+
+@media screen and (max-width: 992px) {
+    .cards_img{
+        display: block;
+    }
+    .cards_text{
+        width: 95%;
+        margin: 0;
+    }
+}

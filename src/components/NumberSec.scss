@@ -1,0 +1,93 @@
+.numbers_sec{
+    margin: 50px 0;
+    background-color: #E4F2FD;;
+    .wrapper{
+        padding: 50px 0;
+        h2{
+            max-width: 350px;
+            margin: 0 auto;
+            font-weight: 600;
+            transition-property: transform;
+            transition: 0.25s ease;
+            text-align: center;
+        }
+        h2::after {
+            content: '';
+                    border-top: 4px solid #4178c0;
+                    width: 100%;
+                    position: absolute;
+                    display: block;
+                    margin-top: 5px;
+                    transform: rotateY(90deg);
+                    transition: transform 0.25s linear;
+          }
+          h2:hover {
+            transform: scale(1);
+          }
+          h2:hover::after {
+            transform: rotate(0deg);
+          }
+        .roww{
+            margin: 40px 0;
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-around;
+            .col1{
+                &:hover{
+                    img{
+                        margin-top: -10px;
+                    }
+                }
+                img{
+                    transition: 0.3s ease;
+                }
+                text-align: center;
+                h4{
+                    padding: 13px 0;
+                    font-weight: 600;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+@media(min-width:0) and (max-width:750.9px){
+    .numbers_sec{
+        margin: 50px 0;
+        background-color: #E4F2FD;
+        .wrapper{
+            padding: 30px 0;
+
+            h2{
+                text-align: center;
+            }
+            .roww{
+                margin: 40px 0;
+                margin-top: 60px;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                .col1{
+                    text-align: center;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+                    margin: 0.5rem 0;
+                    padding: 0.5rem;
+                    width: 40%;
+                    h5{
+                        font-size: 15px;
+                        width: 100%;
+                    }
+                    img{
+                        width: 50px;
+                    }
+                    h4{
+                        padding: 13px 0;
+font-size: 18px;
+                        font-weight: 600;
+        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

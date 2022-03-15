@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Roboto:wght@500&display=swap');
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: {
+        image: url("https://mtarenda.ru/upload/iblock/a6e/Gusenichnyy-ekskavator-Volvo-EC200E.jpg");   
+    }
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 992px) {
+        height: 380px;
+    }
+
+    .banner-text{
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.35);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        div{  
+            font-family: 'Roboto', sans-serif;     
+            font-size: 48px;
+            font-weight: 600;
+        }
+
+        span{
+            font-size: 20px;
+            font-weight: 700;
+
+            a{
+                color:white;
+            }
+
+            span{
+                color: #FFC700;
+            }
+        }
+      
+    }
+}
+

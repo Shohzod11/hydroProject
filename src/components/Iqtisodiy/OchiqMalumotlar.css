@@ -1,0 +1,32 @@
+.ochiq_malumotlar {
+    padding: 10px 4.5%;
+}
+
+.malumotlar_table {
+    border: 1px solid rgba(158, 158, 158, 0.356);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgba(158, 158, 158, 0.356);
+    padding: 30px;
+}
+
+.malumotlar_table i {
+    margin-left: 90%;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(92, 92, 92);
+}
+
+.malumotlar_table i:hover {
+    font-size: 30px;
+    color: black;
+}
+
+.malumotlar_table tr {
+    width: 100%;
+}
+
+.malumotlar_table td {
+    width: 50%;
+    padding: 20px !important;
+    font-weight: bold;
+}

@@ -1,0 +1,123 @@
+.mob_nav{
+    @media all and (max-width:992px){
+        display: block;
+    }
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid rgb(209, 204, 204);
+    .wrapper{
+        grid-template-columns: 25% 50% 25%;
+        padding: 10px 10px;
+        display: grid;
+        align-items: center;
+        .centre{
+            text-align: center;
+        }
+       .left{
+        .dropdown-toggle{
+            width: 50px;
+        }
+        img{
+            width: 30px;
+            
+          
+        }
+        
+       }
+        button{
+               background-color: #175cf1;
+               border: none;
+                width: 30px;
+                height: 30px;
+               margin-left: auto;
+                border-radius: 5px;
+               svg{
+                   color: #fff;
+               }
+            }
+        }
+        .dropdown-menu {
+            padding: 0;
+            min-width: 3rem;
+        }
+        .dropdown-item {
+            padding: 5px 9px;
+        }
+    }
+
+    .offcanvas-header {
+        margin-top: 100px;
+        .socials{
+            ul{
+                display: flex;
+                padding-left: 0;
+                li{
+                    
+                    list-style-type: none;
+                    a{
+                        color: rgb(0, 195, 255);
+                        svg{
+                            font-size: 30px;
+                            margin-right: 15px;
+                            transition: 0.3s ease;
+                            &:hover{
+                                color: #179af1;
+                            }
+                        }
+                    }
+                    .facebook_icon{
+                        transition: 0.014s ease;
+                        svg{
+                            &:hover{
+                                color: #175cf1;
+                                transform: rotate(360deg);
+                            }
+                        }
+                    }
+                    .telegram_icon{
+                        svg{
+                            &:hover{
+                                color: #00f7ff;
+                                margin-top: -2px;
+                                margin-left: 2px;
+                                // transform: rotate(360deg);
+                            }
+                        }
+                    }
+                    .instagram_icon{
+                        svg{
+                            &:hover{
+                                font-size: 32px;
+                                transform: rotate(-360deg);
+                                color: #ff5860;
+                            }
+                        }
+                    }
+                }
+            }                
+        }
+        .btn-close{
+            margin-top: -30px !important;
+            font-size: 20px;
+        }
+    }
+    .offcanvas-body{
+        .quick_links{
+            text-align: left;
+            padding-left: 0;
+            li{
+                list-style: none;
+                font-size: 19px;
+                margin: 10px 0;
+            }
+        }
+    }
+    .offcanvas-start{
+        width: 270px !important;
+    }
+    .offcanvas {
+        width: 270px;
+    }

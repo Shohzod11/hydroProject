@@ -1,0 +1,133 @@
+.shartnomalar {
+    padding: 25px 4.5%;
+}
+
+.shartnomalar h1 {
+    margin: 0 auto;
+    width: 300px;
+    transition-property: transform;
+        transition: 0.25s ease;
+        text-align: center;
+    text-align: center;
+}
+
+
+
+.shartnomalar .h1 {
+    position: relative;
+}
+
+.shartnomalar h1 {
+    margin: 0 auto;
+    width: 300px;
+    transition-property: transform;
+    transition: 0.25s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.shartnomalar h1::after {
+    content: '';
+    border-top: 4px solid #4178c0;
+    width: 100%;
+    position: absolute;
+    display: block;
+    transform: rotateY(90deg);
+    transition: transform 0.25s linear;
+  }
+ .shartnomalar h1:hover {
+    transform: scale(1);
+  }
+ .shartnomalar h1:hover::after {
+    transform: rotate(0deg);
+  }
+
+.shartnomalar_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.shartnomalar .card {
+    border: none;
+    padding: 20px;
+    display: grid ;
+    grid-template-columns: 25% 75%;
+}
+
+.shartnomalar .card img {
+    transition: 0.4s ease;
+    width: 100%;
+    height: 300px;
+}
+.shartnomalar .card img:hover {
+    transform: scale(1.07);
+    transition: 0.8s;
+}
+
+.shartnomalar .card section {
+    text-align: left;
+    padding-left: 25px;
+}
+.shartnomalar .card:hover > img{
+    transform: scale(1.09 , 1.09);
+}
+.shartnomalar .card:hover section > p{
+    padding-left: 10px;
+    color: rgb(84, 141, 145);
+}
+.shartnomalar .card section h5 {
+    color: dodgerblue;
+    text-align: left;
+}
+
+.shartnomalar .card section h4:hover {
+    color: dodgerblue;
+    transform: translateX(7px);
+    transition: 0.8s;
+}
+
+
+.shartnomalar .card section p {
+    font-size: 15px;
+    transition: 0.4s ease;
+}
+
+.shartnomalar .card section p:hover {
+    color: dodgerblue;
+    transform: translateX(7px);
+    transition: 0.8s;
+}
+
+@media screen and (max-width: 991px) {
+    .shartnomalar .card img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .shartnomalar .card img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .shartnomalar .card{
+        display: block;
+        text-align: center;
+    }
+
+
+    .shartnomalar .card section {
+        width: 100%;
+        padding-left: 0 !important;
+    }
+
+    .shartnomalar .card section h4 {
+        margin-top: 10px;
+    }
+
+    /* .card {
+        padding-left: 0 !important;
+    } */
+}

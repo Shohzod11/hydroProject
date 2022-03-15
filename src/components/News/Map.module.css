@@ -1,0 +1,67 @@
+.MapcLICK{
+          width: 100%;
+          display: flex;
+          margin:  0;
+          flex-wrap: wrap;
+          padding: 1rem;
+          height: 100%;
+         background-color: #00245e;
+         border-radius: 20px;
+align-items: center;
+          justify-content: center;
+          
+}
+.MapName{
+          width: 40%;
+          border-radius: 20px;
+          margin-left: 1rem;
+          padding: 0 1rem;
+          align-content: center;
+          display: grid;
+}
+.MapName h1{
+color: #dfe39a;
+font-family: "RobotoCondensed-Regular";
+margin-bottom:1.3rem;
+}
+.MapName a{
+color: #dfe39a !important;
+font-size: 20px !important;
+
+
+}
+.MapName a img{
+          width: 40px;
+          height: 30px;
+          margin-right: 10px;
+}
+.Map2{
+          width: 50%;
+}
+.Map2 path{
+          fill: transparent;
+          stroke: rgb(223, 227, 154);
+          stroke-width: 2px;
+}
+.Map2 :hover{
+          fill: rgb(223, 227, 154);
+}
+.Map2 path :hover {
+          opacity: 1;
+}
+.Map2 :focus{
+          fill: rgb(223, 227, 154);
+}
+@media(min-width:0) and (max-width:700.9px){
+          .MapName{
+                    width: 100%;
+                    margin-top: 1.5rem;
+          }  
+          .MapName h1{
+                    font-size: 21px;
+          }   
+          .Map2{
+                    width: 100%;
+                    height: 200px;
+          }
+}
